@@ -1,6 +1,3 @@
-console.log('Olá mundo')
-console.log('Executar depois do Olá mundo')
-
 
 const buyButton = document.getElementById('buy-button')
 const cartForm = document.getElementById('cart-form')
@@ -27,19 +24,20 @@ removeTicket.addEventListener("click", (e) => {
     
 })
 
-cartForm.addEventListener("submit", (e) =>{
+
+cartForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const nome = cartForm.nome.value;
-    const email = cartForm.email.value;
+    const email =  cartForm.email.value;
     const quantityTickets = ticket.innerText;
-
-    console.log('Nome: ', nome)
-    console.log('Email: ', email)
-    console.log('Tickets: ', ticket.innerText)
 
     window.localStorage.setItem('nome', nome)
     window.localStorage.setItem('email', email)
     window.localStorage.setItem('quantityTickets', quantityTickets)
     window.location.href = "finalizacao.html"
+
 })
+
+
+
 

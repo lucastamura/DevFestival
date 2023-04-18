@@ -1,10 +1,9 @@
-/*Boby*/
-
+/* Body */
 body{
-    background: #01011C;
+    background-color: #01011C;
 }
 
-/*Global Spacing*/
+/* Global Spacing */
 .pad10-top{
     padding-top: 10px;
 }
@@ -14,7 +13,6 @@ body{
 .pad30-top{
     padding-top: 30px;
 }
-
 .pad10-bottom{
     padding-bottom: 10px;
 }
@@ -25,26 +23,26 @@ body{
     padding-bottom: 30px;
 }
 
-/*Header*/
-/*No meu Header, dento da classe menu, dentro da tag ul, eu quero estilizar o meu a*/
-header .menu ul a{
+/* Header */
+#header{
+    background: #01011C;
+}
+
+#header .menu ul a{
     font-family: Poppins;
-    font-size: 19px;
     font-weight: 400;
+    font-size: 19px;
     color: #FFFFFF;
     text-transform: uppercase;
 }
 
-#header{
-    background: #01011C;
-}
 #header .flex-box{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#header .flex-box nav{
+#header .flex-box nav{ 
     display: flex;
     align-items: center;
     gap: 36px;
@@ -54,55 +52,44 @@ header .menu ul a{
     max-width: 170px;
 }
 
-/*Tipografia*/
-
+/* Tipografia */
 .title{
     font-family: Poppins;
+    line-height: 1.2;
     color: #FFFFFF;
-    line-height: 1.1;
 }
-
-.title.one{
+.title.one{    
     font-size: 90px;
     font-weight: 700;
-
 }
-
 .title.two{
     font-size: 60px;
     font-weight: 700;
 }
-
 .title.threehalf{
     font-size: 28px;
     font-weight: 700;
 }
-
 .title.three{
     font-size: 24px;
     font-weight: 600;
 }
-
 .title.four{
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 600;
 }
-
 .title.center{
     text-align: center;
 }
-
 .content-box p{
-    color:#FFFFFF;
     font-family: Poppins;
     font-size: 19px;
     font-weight: 400;
+    color: #FFFFFF;
 }
-
 .blue-text{
-    color: #0000FF
+    color: #0000FF;
 }
-
 .lightblue-text{
     color: #A5A5FF;
 }
@@ -140,20 +127,18 @@ header .menu ul a{
     color: #FFFFFF;
 }
 
-/*Grid*/
-
+/* Grid */
 .container{
     padding: 10px;
-    width: 100%; /* esta forçando todo o conteudo máx a esque e dire*/
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Seções*/
+/* Seções */
 #principal{
     padding: 50px 0;
 }
-
 #principal .flex-box{
     display: flex;
     align-items: center;
@@ -163,11 +148,10 @@ header .menu ul a{
 #sobre{
     padding: 50px 0;
 }
-
 #sobre .flex-box{
     display: flex;
     align-items: center;
-    gap: 75px
+    gap: 75px;
 }
 
 #sobre .flex-box .left,
@@ -188,10 +172,12 @@ header .menu ul a{
     gap: 15px;
 }
 
+#artistas .artists-list img{
+    border-radius: 255px;
+}
 #finalizacao{
     padding: 50px 0;
 }
-
 #finalizacao .flex-box{
     display: flex;
     align-items: center;
@@ -199,7 +185,6 @@ header .menu ul a{
     flex-direction: column;
     gap: 50px;
 }
-
 #finalizacao .flex-box .ticket{
     position: relative;
     min-width: 700px;
@@ -208,19 +193,16 @@ header .menu ul a{
     border-left-width: 100px;
     padding: 40px;
 }
-
 #finalizacao .flex-box .ticket img{
     position: absolute;
     right: 20px;
     bottom: 20px;
 }
-
 #finalizacao .flex-box .ticket .quantity-box{
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #FFFFFF
+    border: 1px solid #FFFFFF;
 }
-
 #carrinho{
     padding: 50px 0;
 }
